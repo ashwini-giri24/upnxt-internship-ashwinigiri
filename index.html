@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechNova</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+ <header>
+  <div class="logo">🛍 TechNova</div>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="cart-icon">
+    🛒 Cart (<span id="cart-count">0</span>)
+  </div>
+</header>
+
+  <!-- Home Section -->
+  <section id="home" class="hero">
+    <h1>Welcome to TechNova</h1>
+    <p>Your one stop destination for trendy shopping</p>
+    <a href="#products" class="btn">Shop Now</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+      TechNova is a modern online shopping platform offering fashion,
+      electronics and lifestyle products at affordable prices.
+    </p>
+    <a href="#" class="btn secondary">Read More</a>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="products">
+    <h2>Our Products</h2>
+
+    <div class="product-container">
+
+      <div class="card">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.SQJDUL8V4QDKE65flFZzUAHaHa?pid=Api&P=0&h=180" alt="Product">
+        <h3>Mobile</h3>
+        <p>₹42,900</p>
+        <button class="btn">Buy Now</button>
+        <button class="cart-btn" onclick="addToCart('Mobile',42900)">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.lkAtvp-F5Hc93rHHu_1ICgHaHa?pid=Api&P=0&h=180" alt="Product">
+        <h3>Washing Machine</h3>
+        <p>₹29,999</p>
+        <button class="btn">Buy Now</button>
+       <button class="cart-btn" onclick="addToCart('Washing Machine',29999)">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.5IjJiFaMLXzXqfHFhkMLVgHaIB?pid=Api&P=0&h=180" alt="Product">
+        <h3>Smart Speaker</h3>
+        <p>₹1499</p>
+        <button class="btn">Buy Now</button>
+       <button class="cart-btn" onclick="addToCart('Smart Speaker',1499)">Add to Cart</button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Section -->
+<section class="cart">
+  <h2>Your Cart</h2>
+  <ul id="cart-items"></ul>
+  <p><strong>Total: ₹<span id="total">0</span></strong></p>
+</section>
+
+<!--Contact Section-->
+<section id="contact" class="contact">
+<h2>Contact Us</h2>
+<form id="contactForm">
+  <input type="text" placeholder="Your Name" required>
+  <input type="email" placeholder="Your Email" required>
+  <textarea placeholder="Your Message" required></textarea>
+  <button type="submit" class="btn">Send Message</button>
+</form>
+</section>
+
+  <!-- Footer -->
+  <footer>
+  Contact Us: TechNova@email.com
+  <p>© 2026 TechNova All Rights Reserved.</p>
+</footer>
+
+<!--JavaScript Connect-->
+<Script src="script.js"></Script>
+
+</body>
+</html
